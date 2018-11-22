@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<div id="app">
+  <h1>{{title}}</h1>
+  <div class="select-dropdown">
+    <select name="sensorName" id="sensorName" (change)="onSensorChange($event)">
+      <option [value]="idx" *ngFor="let name of sensorNames; let idx=index;">{{name}}</option>
+    </select>
+  </div>
+  <div class="sensor-data">
+    <app-sensor *ngIf="sensors" [data]="sensors"></app-sensor>
+  </div>
+</div>

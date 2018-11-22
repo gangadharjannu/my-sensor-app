@@ -1,0 +1,52 @@
+#app {
+    background: #e4f5f6;
+    border-radius: 4px;
+    padding: 20px;
+    transition: all 0.2s;
+  }
+  
+  .select-dropdown {
+    position: relative;
+    background-color: #e6e6e6;
+    width: auto;
+    max-width: 100%;
+    border-radius: 2px;
+  }
+  
+  .select-dropdown select {
+    font-family: "helvetica neue", helvetica;
+    font-size: 1rem;
+    font-weight: 200;
+    max-width: 100%;
+    width: 100%;
+    padding: 8px 24px 8px 10px;
+    border: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .select-dropdown select:active,
+  .select-dropdown select:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .select-dropdown:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    right: 8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #aaa;
+  }
+  
+  .sensor-data {
+    margin-top: 50px;
+  }
+  

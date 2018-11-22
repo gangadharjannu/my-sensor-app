@@ -1,0 +1,11 @@
+<div class="sensor-component">
+  <ng-container *ngIf="sensorData">
+      <div *ngFor="let sensor of sensorData" [ngClass]="sensor.prop">
+          <div class="sensor-name">{{sensor.prop}}</div>
+          <div class="sensor-value"><strong>{{sensor.val}}</strong></div>
+        </div>
+  </ng-container>
+  <ng-container *ngIf="!sensorData">
+    No Data :(
+  </ng-container>
+</div>

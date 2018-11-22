@@ -1,0 +1,40 @@
+.sensor-component {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.sensor-component div {
+  text-align: center;
+}
+
+.sensor-component .temperature {}
+
+.sensor-component .humidity {}
+
+.sensor-component .co2 {}
+
+.temperature .sensor-value:after {
+  content: "\00b0";
+  padding-left: 2px;
+}
+
+.humidity .sensor-value:after {
+  font-size: 75%;
+  vertical-align: bottom;
+  content: "\0025";
+  padding-left: 2px;
+}
+
+.co2 .sensor-value:after {
+  font-size: 75%;
+  vertical-align: bottom;
+  content: "ppm";
+  padding-left: 2px;
+}
+
+.sensor-component div .sensor-value{
+        
+}
